@@ -14,6 +14,8 @@ Aside from that I like to take on interesting side projects related to web devel
 
 This site was built using the <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a> theme for Jekyll. I modified it to fit my needs.
 
+Furthermore, the site is deployed using <a href="https://www.netlify.com/">Netlify</a>.
+
 **Get in touch 📪**
 
 - {{ site.author.email }}
