@@ -1,4 +1,4 @@
-# My personal website
+# My personal website 👋
 [![Netlify Status](https://api.netlify.com/api/v1/badges/83bd0af6-0d3e-4a36-92e8-2b1d521aea58/deploy-status)](https://app.netlify.com/sites/flamboyant-hoover-475771/deploys)
 
 Visit <a href="https://matanbroner.com">matanbroner.com</a> to see my work.
