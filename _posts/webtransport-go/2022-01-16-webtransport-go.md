@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning about WebTransport with Go" 
-date:   2022-01-15 11:20:00 +0700
+date:   2022-01-19 11:20:00 +0700
 categories: go webtransport quic
 ---
 I am always interested in new technologies that arise for the web, especially those relating to real-time client-server communication.
