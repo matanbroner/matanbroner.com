@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Learning about WebTransport with Go" 
-date:   2022-01-19 11:20:00 +0700
+title:  "[WIP] Learning about WebTransport with Go" 
+date:   2022-01-23 11:20:00 +0700
 categories: go webtransport quic
 ---
+> Note: This post is a work in progress. It is subject to change.
 I am always interested in new technologies that arise for the web, especially those relating to real-time client-server communication.
 In the past, I have used WebSockets on projects such as <a href="https://github.com/matanbroner/Tryout">Tryout</a>, and have remained curious about persistent connections over the web. Furthermore, this past semester I studied Wireless Networking, which exposed me to the evolution of TCP/UDP into technologies such as MPTCP and QUIC. 
 
