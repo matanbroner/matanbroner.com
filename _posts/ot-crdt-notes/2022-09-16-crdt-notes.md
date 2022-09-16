@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Notes About Distributed Data Types"
+date:   2022-09-16 00:00:00 +0700
+categories: notes
+---
+
 # Introduction
 A while ago, I built an app called "Tryout", which uses the notorious ShareDB library to map operational transforms onto
 a collaborative coding environment. The app was fun to build, but it left me with a lasting desire to better
@@ -42,11 +49,14 @@ Again, we assume that with liveness that a delivery order exists such that each 
 With the same happens-before relation, we say that f happened before g if f is delivered before g is delivered.
 
 #### Convergence
-We must meet safety and liveness conditions, meaning that for two replicas:
+For two replicas to eventually converge, we must meet safety and liveness conditions, meaning that for two replicas:
 * If their causal history is the same, their abstract states are equivalent (their `query` operations return the same value).
 * If f is in the causal history of a causal history, this implies that it *eventually* gets added to this history.
 
 ### CRDTs
+
+#### State based CRDT: CvRDT
+
 
 
 ## Links
