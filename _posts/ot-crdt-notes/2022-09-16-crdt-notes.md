@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes About CRDTs"
+title:  "Notes About Distributed Data Structures"
 date:   2022-09-16 13:55:00 +0700
 categories: notes
 ---
