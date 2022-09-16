@@ -20,7 +20,7 @@ and I figured my understanding of them may improve if I take the time to summari
 a list of links I find useful and interesting.
 
 ## Seminal Paper: A comprehensive study of Convergent and Commutative Replicated Data Types
-![Link to paper](https://hal.inria.fr/inria-00555588/document)
+[Link to paper](https://hal.inria.fr/inria-00555588/document)
 
 ### Background
 * Eventual consistency allows for asynchronous replication with other users such that they all reach the same state *eventually*.
@@ -56,8 +56,16 @@ For two replicas to eventually converge, we must meet safety and liveness condit
 ### CRDTs
 
 #### State based CRDT: CvRDT
+These CRDTs send their entire state to all other replicas, which must be merged by a commutative, associative, and idempotent function.'
+In order to merge, the states of two replicas must form a *semilattice*.
+* What is a semilattice in plain terms?...
+Updating the state must monotonically increase the internal state count.
+It is proven in the paper that as long as replicas can deliver their states to one another, they will eventually converge.
 
+#### Operation based CRDT: CmRDT
+Operations are reliably broadcasted between replicas. They must arrive without duplication but can arrive in any order, meaning they are commutative but not idempotent (ie. can be applied in any order but not multiple times without changing the result.)
 
+> Reliable causal delivery does not require agreement, and is immune to partitions in the network.
 
 ## Links
 
