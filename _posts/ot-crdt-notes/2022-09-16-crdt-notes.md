@@ -4,7 +4,7 @@ title:  "Notes About Distributed Data Structures"
 date:   2022-09-16 00:00:00 +0700
 categories: notes
 ---
-> Note: This post is more of a space for me to jot down my notes as I read a long survey paper
+> Note: This post is more of a space for me to jot down my notes as I learn about CRDTs
 
 # Introduction
 A while ago, I built an app called "Tryout", which uses the notorious ShareDB library to map operational transforms onto
@@ -20,8 +20,14 @@ I am collecting a bunch of notes and links about the topic in order to collect m
 and I figured my understanding of them may improve if I take the time to summarize certain parts. Furthermore, I will be curating
 a list of links I find useful and interesting.
 
-## Survey Paper: A comprehensive study of Convergent and Commutative Replicated Data Types
+## Seminal Paper: A comprehensive study of Convergent and Commutative Replicated Data Types
 ![Link to paper](https://hal.inria.fr/inria-00555588/document)
+
+### Background
+* Eventual consistency allows for asynchronous replication with other users such that they all reach the same state *eventually*.
+* CRDTs require no synchronization, allowing users to apply their updates immediately.
+* CRDTs do not use consensus under the hood.
+* Certain limitations requiring expensive operations, these can be delayed to a later period when the network is well connected.
 
 
 ## Links
