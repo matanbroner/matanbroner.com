@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes About Distributed Data Structures"
-date:   2022-09-16 13:55:00 +0700
+date:   2022-09-16 00:00:00 +0700
 categories: notes
 ---
 > Note: This post is more of a space for me to jot down my notes as I read a long survey paper
