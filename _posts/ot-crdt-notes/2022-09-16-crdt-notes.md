@@ -1,11 +1,3 @@
----
-layout: post
-title:  "Notes About Distributed Data Structures"
-date:   2022-09-16 00:00:00 +0700
-categories: notes
----
-> Note: This post is more of a space for me to jot down my notes as I learn about CRDTs
-
 # Introduction
 A while ago, I built an app called "Tryout", which uses the notorious ShareDB library to map operational transforms onto
 a collaborative coding environment. The app was fun to build, but it left me with a lasting desire to better
@@ -28,6 +20,33 @@ a list of links I find useful and interesting.
 * CRDTs require no synchronization, allowing users to apply their updates immediately.
 * CRDTs do not use consensus under the hood.
 * Certain limitations requiring expensive operations, these can be delayed to a later period when the network is well connected.
+* An *atom* is a basic data structure which is contained within an *object*.
+* Objects can be replicated, and are independent of each other within the process in which they are located.
+* An *operation* is applied on an object by a client, first applied to a source replica and is then propagated asynchronously to all other replicas.
+* Operations can be state or operation based.
+
+#### State Based Replication
+An update occurs entirely at the source and is then propagated by transferring the modified payloads between replicas.
+Updates may have some preconditions or may be null, depending on the object at hand.
+For example, incrementing/decrementing a counter has no precondition, but removing elements from a set has the precondition that the item being removed exists in the set.
+Causal history is modified during an update such that `f, C(f(xi)) = C(xi) U {f}` and states are merged through `xi, xj, C(merge(xi, xj)) = C(xi) U C(xj)`.
+
+* Happens-Before relationship: `f happens before g <-> C(f) ⊂ C(g)`.
+
+We assume that due to liveness that each replica is able to receive all other replicas' causal history.
+
+#### Operation Based Replication
+Instead of sending state, replicas send their operations, using the same method of applying locally then propagating the operations to other replicas.
+Causal history of a replica again starts as null, and after executing the downstream propagation it will be (given an operation `f` on replica `xi`): `C(f(xi)) = C(xi) U {f}`.
+Again, we assume that with liveness that a delivery order exists such that each each update is reliably broadcasted to all other replicas.
+With the same happens-before relation, we say that f happened before g if f is delivered before g is delivered.
+
+#### Convergence
+We must meet safety and liveness conditions, meaning that for two replicas:
+* If their causal history is the same, their abstract states are equivalent (their `query` operations return the same value).
+* If f is in the causal history of a causal history, this implies that it *eventually* gets added to this history.
+
+### CRDTs
 
 
 ## Links
