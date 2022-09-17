@@ -85,6 +85,10 @@ Operations are reliably broadcasted between replicas. They must arrive without d
 * [Conclave](https://conclave-team.github.io/conclave-site/)
 * [Antimatter](https://braid.org/antimatter) (self Pruning, guys from Braid)
 
+**Tutorials**
+
+* [Operation-based CRDTs: JSON document](https://bartoszsypytkowski.com/operation-based-crdts-json-document/)
+
 ### Forums and Discussions
 
 * [Be aware that CRDTs like automerge are solving a different (and harder) problem than Replicache.](https://news.ycombinator.com/item?id=22175530)
