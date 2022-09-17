@@ -6,7 +6,7 @@ categories: notes
 ---
 
 <p align="center">
-  <img src="https://crdt.tech/assets/img/crdt-favicon.png" alt="CRDT"/>
+  <img width="250px" src="https://crdt.tech/assets/img/crdt-favicon.png" alt="CRDT"/>
 </p>
 
 
