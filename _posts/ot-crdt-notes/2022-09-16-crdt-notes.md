@@ -5,6 +5,11 @@ date:   2022-09-16 00:00:00 +0700
 categories: notes
 ---
 
+<p align="center">
+  <img src="https://crdt.tech/assets/img/crdt-favicon.png" alt="CRDT"/>
+</p>
+
+
 # Introduction
 A while ago, I built an app called "Tryout", which uses the notorious ShareDB library to map operational transforms onto
 a collaborative coding environment. The app was fun to build, but it left me with a lasting desire to better
