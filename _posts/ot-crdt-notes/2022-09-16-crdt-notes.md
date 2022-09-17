@@ -63,7 +63,9 @@ For two replicas to eventually converge, we must meet safety and liveness condit
 #### State based CRDT: CvRDT
 These CRDTs send their entire state to all other replicas, which must be merged by a commutative, associative, and idempotent function.'
 In order to merge, the states of two replicas must form a *semilattice*.
-* What is a semilattice in plain terms?...
+
+* What is a semilattice in plain terms?... The way I understand it is a mathematical construct that is made powerful through its properties of associativity, commutativity, and idempotence
+
 Updating the state must monotonically increase the internal state count.
 It is proven in the paper that as long as replicas can deliver their states to one another, they will eventually converge.
 
