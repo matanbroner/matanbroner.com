@@ -83,6 +83,9 @@ Operations are reliably broadcasted between replicas. They must arrive without d
 * [Peritext](https://www.inkandswitch.com/peritext/)
 * [Chronofold](https://arxiv.org/pdf/2002.09511.pdf)
     * [Github](https://github.com/dkellner/chronofold)
+* [AntidoteDB](https://arxiv.org/pdf/1902.03576.pdf)
+  * [Persisting the AntidoteDB Cache](https://hal.inria.fr/hal-03654003v1/document)
+  * [CRDTs for truly concurrent file systems](https://hal.inria.fr/hal-03278658/document)
 
 ### Blog Posts
 
