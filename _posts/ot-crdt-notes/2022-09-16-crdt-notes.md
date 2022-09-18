@@ -105,6 +105,7 @@ Operations are reliably broadcasted between replicas. They must arrive without d
 ### Lists
 
 * [Awesome CRDT](https://github.com/alangibson/awesome-crdt)
+* [Awesome Reads (distributed systems reads)](https://github.com/Horusiath/awesome-reads)
 * [Choosing a realtime collaboration library](https://convergencelabs.com/realtime-collaboration-technology-guide/)
 
 
