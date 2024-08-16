@@ -2,13 +2,11 @@
 title: About me
 permalink: /about/
 layout: page
-excerpt: Hello world! I am a MSc student of Computer Science at Texas A&M University. This is my personal website where I host my thoughts about the projects I take part in, as well as my resume.
+excerpt: My name is Matan Broner and I am a Software Engineer at SpaceX working on Direct to Cell.
 comments: false
 ---
 
-My name is Matan Broner and I am a MSc student of Computer Science at Texas A&M University. I am currently a member of the LENSS research group where I study end-to-end 5G security. Overall, my interests are in distributed systems, networks, security, and web development.
-
-Aside from that I like to take on interesting side projects related to web development, networks, and anything else I to read about and wish to experiment with. I have long wanted a space where I can document my thoughts regarding my work. I hope you find my writings enjoyable.
+My name is Matan Broner and I am a Software Engineer at SpaceX working on Direct to Cell. Overall, my interests are in distributed systems, networks, and databases.
 
 # Website
 
